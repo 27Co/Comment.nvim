@@ -1,4 +1,3 @@
-
 -- string pattern matching
 -- characters:
 -- . any character
@@ -41,4 +40,4 @@ local function comment()
   vim.api.nvim_buf_set_text(0, r-1, i, r-1, i, {cmt})
 end
 
-vim.keymap.set('n', '<leader>/', comment, {noremap = true})
+vim.keymap.set('n', '<M-,>', comment, {noremap = true})
